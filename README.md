@@ -19,5 +19,8 @@ import "@eightnineight/electron-console";
 renderer process
 
 ```js
-import { console } from "@eightnineight/electron-console";
+import "@eightnineight/electron-console";
+
+// use as usual, except when using console.log(function)
+console.log('test');
 ```
