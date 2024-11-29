@@ -1,6 +1,6 @@
 # electron-console
 
-Use main process consoles in renderer process
+direct renderer console.log() message to main console.log()
 
 ## Install
 
