@@ -1,0 +1,34 @@
+{
+  "name": "@eightnineight/electron-console",
+  "version": "1.1.0",
+  "description": "electron console",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eightnineight/electron-console.git"
+  },
+  "keywords": [
+    "electron",
+    "console",
+    "log",
+    "ipcMain",
+    "ipcRenderer",
+    "ipc",
+    "renderer",
+    "main"
+  ],
+  "author": "CHIH-HSIN HSU",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eightnineight/electron-console/issues"
+  },
+  "homepage": "https://github.com/eightnineight/electron-console#readme",
+  "devDependencies": {
+    "electron": "^27.0.3"
+  }
+}
