@@ -1,6 +1,8 @@
 # electron-console
 
-direct renderer console.log() message to main console.log()
+When using console.log() in the Electron renderer process, 
+simultaneously display log messages in both the main and 
+renderer processes.
 
 ## Install
 

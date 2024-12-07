@@ -2,7 +2,12 @@ import { ipcMain, ipcRenderer } from 'electron';
 
 const CONSOLE_EVENT__LOG = 'c0219c23-6f4c-47ed-941f-41cda3fa4565';
 
+let originConsoleLog;
+
 const consoleLog = async (...rest) => {
+    if (originConsoleLog) {
+        originConsoleLog(...rest);
+    }
     const data = await ipcRenderer.invoke(CONSOLE_EVENT__LOG, ...rest);
     if (data?.error) {
         throw data.error
@@ -32,5 +37,6 @@ if (process?.type === 'browser') {
 }
 
 if (process?.type === 'renderer') {
+    originConsoleLog = console.log;
     console.log = consoleLog;
 }
